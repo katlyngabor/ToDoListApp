@@ -1,13 +1,11 @@
 /* global describe, it */
 
 (function () {
-    'use strict';
+  'use strict';
 
-    describe('Give it some context', function () {
-        describe('maybe a bit more context here', function () {
-            it('should run here few assertions', function () {
-
-            });
-        });
+  describe('Adding items to the list', function () {
+      it('Input should be a string', function () {
+				(FILL_ME_IN).should.be.an('String');
+      });
     });
-})();
+  })();
