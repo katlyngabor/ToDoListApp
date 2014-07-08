@@ -1,25 +1,17 @@
-$(document).ready( function() {		
+$(document).ready(function() {		
+	var Item = function(info){
+		var info = info || {};
+		this.id = info.id || _.uniqueId('item');
+		this.description = info.description;
+		this.complete = info.complete || false;
+	}
 
-	$('#addToList').click( function() {
-		var todoDescription = $('#listInfo').val();
-		
-		$('.list').prepend('<div class="todo">'
-			+ '<div>'
-			//making new classes inside js 
-				+ '<input type="checkbox" class="checkingList" name="checking list"/>'
-				+ '</div>'
-				+ '<div class="listInfo">'
-				+ todoDescription
-				+ '</div>'
-		+'</div>');
-		
-		$('#textArea')[0].reset();
-		
-		$('.checkingList').unbind('click');
-		$('.checkingList').click( function() {
-			var todo = $(this).parent().parent();
-			todo.toggleClass('checked');
+	$('#add').click(function(){
+		var text = document.getElementById("input");
+		var task = new Item({
+			description: 'hi'
 		});
-		return false;		
+		console.log(task.description);
+		event.preventDefault();
 	});  
 });
