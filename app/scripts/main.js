@@ -7,9 +7,9 @@ $(document).ready(function() {
 	}
 
 	$('#add').click(function(){
-		var text = document.getElementById("input");
+		var input = $('input:text').val();
 		var task = new Item({
-			description: 'hi'
+			description: input
 		});
 		console.log(task.description);
 		event.preventDefault();
