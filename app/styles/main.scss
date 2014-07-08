@@ -2,22 +2,20 @@
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
-// Custom Styles
-body {
-  width:1200px;
-  text-align:center;
-  margin:0 auto;
 
+body{
+	font: small;
+	font-family: 'Handlee', cursive;
 }
 
-.container{
-  margin:0 auto;
-  padding:50px;
-  width:600px; 
-  margin-top:300px;
-  background-color:#ffff94;
+.inputBox {
+	border-radius: 10px;
+	border: 1px solid #6e18f0;
+	margin-top: 5px;
+	margin-left: 25px;
 }
 
+<<<<<<< HEAD
 
 
 .item-count{
@@ -34,4 +32,52 @@ body {
 
 .title{
 	text-align:center;
+=======
+.submitBox {
+	margin-left: 7px;
+	height: 30px;
+	color: white;
+	background-color: rgb(86, 86, 201);
+	border-radius: 10px;
+	border: 1px solid rgb(135, 135, 196);
+	box-shadow: 0 1px 1px white;
+}
+	
+div.katlynListBackground {
+	height: 35px;
+	width: 500px;
+	background: #2257DF;
+	border-radius: 10px;
+	margin: 0 auto;
+	margin-top: 150px;
+	box-shadow: 0 5px 5px #3561D1;
+}
+	
+div.list {margin: 0 auto;width: 500px;}
+	
+div.list>div.todo {
+	background: #2D8FD1;
+	min-width: 300px;
+	max-width: 500px;
+	min-height: 25px;
+	padding-top: 2px;
+	margin-top: 5px;
+	border-radius: 10px;
+	box-shadow: 0 5px 5px rgb(126, 126, 216);
+}
+	
+div.list>div.todo>div {
+	float: left;
+	margin-left: 15px;
+}
+	
+div.list > div.todo > div.listInfo {
+	margin-left:5px;
+	color: white;
+}
+	
+div.list > div.checked {
+		text-decoration: line-through;
+		background: #9E9999;
+>>>>>>> origin/thachbranch
 }
