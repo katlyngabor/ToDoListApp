@@ -7,12 +7,18 @@ function addText(){
     document.getElementById('todo').appendChild(element);
     
 
-
-	// $('#buttonclick').on('click', function(){
- //    	document.getElementById('input').val('');
-	// });
-
+$('#input').val('');
 
  }
 
 
+var Item = function(options){
+	var options = options || {};
+	this.text = options.text;
+	this.checked = function (){
+		if(options.checked = true)
+			options.completed=true;
+
+	};
+
+}
